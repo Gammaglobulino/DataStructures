@@ -1,11 +1,15 @@
 fn main() {
     let s:&'static str="Hello I'm a string";
     for c in s.chars(){
-        println!("{}",c);
+        print!("{}",c);
     }
+    println!();
+    let s1=&s[..5];
+    println!("{}",s1);
+
     // reverse
     for c in s.chars().rev(){
-        println!("{}",c);
+        print!("{}",c);
     }
     // take the first char
 
